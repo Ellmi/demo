@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+    jdbc:
+      lob:
+        non_contextual_creation: true
+  datasource:
+    url: "jdbc:postgresql://host.docker.internal:5431/postgres"
+    username: postgres
+    password:
